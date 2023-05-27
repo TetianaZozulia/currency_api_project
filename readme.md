@@ -36,3 +36,13 @@
   
   Ще є коментарі в коді, не дублюю їх тут.
 
+
+## Docker up
+* build
+```bash
+$ docker build -t currency_api_project .
+```
+
+* run
+  docker build -t currency_api_project .
+
