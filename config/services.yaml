@@ -22,3 +22,20 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Service\FileService:
+        arguments:
+            $path: '/../data/'
+
+    App\Service\CurrencyApiClient:
+        arguments:
+            $apiHost: 'http://api.coinlayer.com'
+            $apiKey: 'a96e8501450d1f824ad765bc478720ab'
+
+    App\Repository\RateRepository:
+        arguments:
+            $fileName: 'rate.json'
+
+    App\Repository\SubscribeRepository:
+        arguments:
+            $filePath: 'subscribers/'
+            $processingFilePath: 'subscribers/processing/'
