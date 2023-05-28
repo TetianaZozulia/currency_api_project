@@ -44,5 +44,12 @@ $ docker build -t currency_api_project .
 ```
 
 * run
-  docker build -t currency_api_project .
+```bash
+  $ docker run -p 8000:8000 currency_api_project
+```
 
+* exec
+```bash
+  $ docker ps
+  $ docker exec -ti 440b710fe5d7 /bin/bash
+```
